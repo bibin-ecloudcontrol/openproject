@@ -12,13 +12,13 @@ build:
 
 deploy:
     context: bibin-ecloudcontrol/DEV
-    #type: statefulset
     replicas: 1
     port:
     - 80
     
 properties:
-    SECRET_KEY_BASE: f2J4YWlQm1LExVuPtDsPJElcikPfFZKz
+    SECRET_KEY_BASE: 
+      vault: SECRET_KEY_BASE
     PGDATA: /appz/data/
     POSTGRES_USER: openproject
     POSTGRES_PASSWORD: 
@@ -26,8 +26,6 @@ properties:
     POSTGRES_HOST: postgres13-master-13-x
     POSTGRES_PORT: 5432
     POSTGRES_DB: openproject
-    APACHE_LOG_DIR: /appz/log/
-    #SERVER_HOSTNAME: 172.18.45.183
-    
-    revision: 32
+        
+    revision: 33
     
