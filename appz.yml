@@ -18,7 +18,7 @@ deploy:
     - 80
     
 volumes:
-  - claim: openproject
+  - claim: openproject-data
     mount: /appz/data
     name: data
     size: 5Gi
