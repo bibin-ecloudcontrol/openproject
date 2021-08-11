@@ -21,8 +21,7 @@ properties:
       vault: SECRET_KEY_BASE
     PGDATA: /appz/data/
     POSTGRES_USER: openproject
-    POSTGRES_PASSWORD: 
-      vault: POSTGRESQL_OPENPROJECT_PASSWORD
+    POSTGRES_PASSWORD: samplepass
     POSTGRES_HOST: postgres13-master-13-x
     POSTGRES_PORT: 5432
     POSTGRES_DB: openproject
